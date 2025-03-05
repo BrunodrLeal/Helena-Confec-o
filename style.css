@@ -77,6 +77,18 @@ nav ul li a:hover {
     background-size: cover;
     z-index: 1;
 }
+.parallax-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagens/horizontal-vatican.jpg'); /* Verifique se o caminho da imagem está correto */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
 
 /* Estilos do Banner */
 .banner-background {
@@ -91,6 +103,22 @@ nav ul li a:hover {
     color: #fff; /* Texto branco para contrastar */
     font-size: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000a6; /* Texto branco para contrastar com o fundo rosa */
+    text-align: center;
+}
+.historia {
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #000000a6;
+    text-align: center;
+    text-indent: 36px;
+    padding-bottom: 30px;
+    padding-right: 55px;
+    padding-left: 50px;
 }
 
 /* Estilos da Seção de Pedidos */
@@ -140,4 +168,111 @@ nav ul li a:hover {
 
 .button:hover {
     background-color: #d45a7d; /* Tom mais escuro para o hover */
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+.submenu li {
+    padding: 10px;
+}
+.submenu li a {
+    text-decoration: none;
+    color: black;
+}
+.colecoes {
+    text-align: center;
+    padding: 20px;
+}
+
+.colecoes .categoria {
+    display: inline-block;
+    width: 22%;
+    margin: 10px;
+    text-align: center;
+}
+
+.colecoes .categoria img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.colecoes .categoria h3 {
+    margin: 10px 0;
+}
+
+.colecoes .categoria a {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.colecoes {
+    text-align: center;
+    padding: 20px;
+}
+
+.categoria {
+    display: inline-block;
+    width: 22%;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.carrossel {
+    position: relative;
+    width: 100%;
+}
+
+.carrossel-imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
 }

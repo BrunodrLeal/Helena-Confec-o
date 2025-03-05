@@ -92,22 +92,8 @@ nav ul li a:hover {
     font-size: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #000000a6; /* Texto branco para contrastar com o fundo rosa */
-    text-align: center;
-}
-.historia {
-    padding: 2rem;     
-    font-size: 1.2rem;
-    color: #000000a6; /* Texto branco para contrastar com o fundo rosa */
-    text-align: center;
-    text-indent: 70px;
-    padding-bottom: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
-}
+
+
 
 /* Estilos da Seção de Pedidos */
 .pedidosh {
