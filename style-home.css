@@ -1,0 +1,158 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9; /* Cor de fundo suave para o corpo */
+}
+
+/* Estilos do Menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #EA7094; /* Cor base aplicada ao menu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* Texto branco para contrastar com o fundo rosa */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Links do menu em branco */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Cor dourada ao passar o mouse */
+}
+
+/* Efeito Parallax */
+.parallax {
+    position: relative;
+    height: 400px; /* Ajuste a altura conforme necessário */
+    overflow: hidden;
+}
+
+.parallax-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagens/horizontal-vatican.jpg'); /* Verifique se o caminho da imagem está correto */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+/* Estilos do Banner */
+.banner-background {
+    height: 100px; /* Ajuste a altura conforme necessário */
+    background-color: #EA7094; /* Cor base aplicada ao banner */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Texto branco para contrastar */
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000a6; /* Texto branco para contrastar com o fundo rosa */
+    text-align: center;
+}
+.historia {
+    padding: 2rem;     
+    font-size: 1.2rem;
+    color: #000000a6; /* Texto branco para contrastar com o fundo rosa */
+    text-align: center;
+    text-indent: 70px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+/* Estilos da Seção de Pedidos */
+.pedidosh {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff; /* Fundo branco para a seção */
+}
+
+.pedidosh h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #EA7094; /* Cor base aplicada ao título */
+}
+
+.pedidosh p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;} /* Cor de texto mais suave */
+
+.formas-pagamento {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.formas-pagamento img {
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.formas-pagamento img:hover {
+    transform: scale(1.1);
+}
+
+/* Botões (caso precise adicionar botões no futuro) */
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #EA7094; /* Cor base aplicada ao botão */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d45a7d; /* Tom mais escuro para o hover */
+}
