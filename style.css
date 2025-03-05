@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #EA7094; /* Cor base ao redor da página */
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FCE4EC;
+    padding: 15px 20px;
+    z-index: 10; /* Garante que o menu fique acima da imagem de fundo */
+}
+
+.menu .logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu .logo img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EA7094;
+    font-weight: bold;
+}
+
+.banner-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('imagens/Helena-removebg-preview.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1; /* A imagem ficará no fundo */
+}
+
+.pedidos {
+    position: relative;
+    padding: 40px;
+    text-align: center;
+    background-color: #F48FB1;
+    z-index: 20; /* Garante que os pedidos apareçam acima da imagem de fundo */
+}
+
+.pedidos h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.pedidos .formas-pagamento {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pedidos .formas-pagamento img {
+    width: 60px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+
